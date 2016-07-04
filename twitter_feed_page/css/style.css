@@ -1,0 +1,278 @@
+
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+
+*, *:before, *:after {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html, body {
+//height: 100%;
+}
+
+body {
+font: 14px/1 'Open Sans', sans-serif;
+color: #555;
+background: #eee;
+}
+
+.flex-header{
+    display: flex;
+    background-color: #fff;
+}
+.r-search{
+    width: 50px;
+    min-width: 50px;
+    background-color: #fff;
+    border-right: 3px solid #eee;
+}
+
+.flex-box{
+    height: 80px;
+    margin: 0 auto;
+    float: left;
+}
+.one{
+    margin-left: 10px;
+    width: 150px;
+    min-width: 100px;
+    background-color: #fff;
+    border-right: 3px solid #eee;
+}
+.two{
+    margin-left: 0px;
+    align-content: center;
+    width: 350px;
+    min-width: 350px;
+    background-color: #888;
+}
+.three{
+    width: 600px;
+    min-width: 550px;
+    background-color: #fff;
+}
+.four{
+    padding-left: 25px;
+    width: 550px;
+}
+.five{
+    margin-right: 25px;
+    width: 150px;
+    min-width: 50px;
+    background-color: #fff;
+}
+
+.flex-sec{
+    height: 80px;
+    min-width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    
+}
+.row{
+    margin-right:10px;
+    align-content: center;
+}
+.r-one{
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    border: 1px solid #888;
+    min-width: 40px;
+}
+.r-two{
+    height: 50px;
+    width: 50px;
+    min-width: 40px;
+    border-radius: 100px;
+    border: 1px solid #888;
+}
+.r-three{
+    height: 50px;
+    width: 50px;
+    min-width: 40px;
+    border-radius: 100px;
+    
+    border: 1px solid #888;
+}
+.r-logo{
+    margin: 15px; 15px;
+    height: 50px;
+    width: 50px;
+    min-width: 40px;
+    border-radius: 100px;
+    background-color: skyblue;
+    border: 1px solid #fff;
+}
+.r-avathar{
+    margin: 15px; 15px;
+    height: 50px;
+    width: 50px;
+    min-width: 40px;
+    border-radius: 100px;
+    background-image:image()
+    border: 1px solid #fff;
+}
+.r-logo-twitter{
+    margin: 15px 15px;
+    margin-left: 200px;
+    height: 50px;
+    width: 50px;
+    min-width: 40px;
+    border-radius: 100px;
+    border: 1px solid #fff;
+}
+.icon-color{
+    color: skyblue;
+}
+
+center{
+    margin-top: 15px;
+}
+
+.r-search{
+    margin-top: 15px;
+    margin-left: 20px;
+    height: 50px;
+    width: 150px;
+    border-radius: 100px;
+    border: 2px solid lightgray;
+    min-width: 40px;
+}
+
+h1 {
+padding: 50px 0;
+font-weight: 400;
+text-align: center;
+}
+
+p {
+margin: 0 0 20px;
+line-height: 1.5;
+}
+p1{
+
+}
+main {
+min-height: 25px;
+max-height: 65px;
+min-width: 320px;
+max-width: 780px;
+padding: 10px 1px 0px 0px;
+margin: 0 auto;
+background: #fff;
+}
+    
+section {
+margin-top: 0px;    
+display: none;
+max-width: 800px;    
+padding: 20px 20px 20px 120px;
+border-bottom: 1px solid lightgray;
+background-color: #fff;
+}
+.flex-container{
+    display: flex;
+}
+
+.box{
+    height: 50px;
+    width: 0 auto;
+    padding-bottom: 50px;
+    background-color: #eee;
+    display: block;
+}
+input {
+display: none;
+}
+
+label {
+display: inline-block;
+vertical-align: text-bottom;    
+margin: 1px 0px -1px;
+padding: 15px 50px;
+font-weight: 600;
+text-align: center;
+text-overflow: clip;
+color: #000;
+border: 5px solid transparent;
+}
+
+label:before {
+font-family: fontawesome;
+font-weight: normal;
+margin-right: 20px;
+}
+
+label[for*='']:before {
+content: '\f1cb';
+}
+
+label[for*='']:before {
+content: '\f17d';
+}
+
+label[for*='']:before {
+content: '\f16b';
+}
+
+label[for*='']:before {
+content: '\f1a9';
+}
+
+label[for*='']:before {
+content: '\f1a8';
+}    
+
+label:hover {
+color: #888;
+cursor: pointer;
+}
+
+input:checked + label {
+color: #555;
+border-bottom-color: skyblue;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+display: block;
+}
+
+@media screen and (max-width: 650px) {
+label {
+font-size: 0;
+}
+
+label:before {
+margin: 0;
+font-size: 18px;
+}
+}
+
+@media screen and (max-width: 400px) {
+label {
+padding: 15px;
+}
+}
+
+
+fa-ul{
+    align-content: center;
+    float: left;
+}
+li{
+    margin-top: -10px; 
+    float: left;
+    margin-left: -30px;
+    padding: 1px 40px 5px 5px;
+}
+li em{
+    float: right;
+    
+}
